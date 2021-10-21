@@ -7,7 +7,8 @@ right_justify('allen')
 """
 
 def right_justify(columns, s):
-  for i in range(columns):
+  spaces_before_string = columns - len(s)
+  for i in range(spaces_before_string):
     print(' ', end='')
   print(s)
 
